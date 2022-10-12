@@ -8,6 +8,15 @@
 [![GitHub license](https://img.shields.io/github/license/termuxid-dev/termux-tools.svg)](https://github.com/termuxid-dev/termux-tools/blob/main/LICENSE)
 [![GitHub contributors](https://img.shields.io/github/contributors/termuxid-dev/termux-tools.svg)](https://GitHub.com/termuxid-dev/termux-tools/graphs/contributors/)
 
+## clone this project
+```shell
+git clone https://github.com/termuxid-dev/termux-tools
+```
+
+```shell
+cd termux-tools
+```
+
 # Contributors
 We welcome contributions from the community! It doesn't matter if you can't code, write documentation, or help find bugs,
 all contributions are welcome.
