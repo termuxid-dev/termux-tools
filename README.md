@@ -10,7 +10,7 @@ The most complete helper tool for Termux that you can use and do amazing things.
 [![GitHub license](https://img.shields.io/github/license/termuxid-dev/termux-tools.svg)](https://github.com/termuxid-dev/termux-tools/blob/main/LICENSE)
 [![GitHub contributors](https://img.shields.io/github/contributors/termuxid-dev/termux-tools.svg)](https://GitHub.com/termuxid-dev/termux-tools/graphs/contributors/)
 
-## Clone this project
+## Installation
 
 ```shell
 pkg install python python2
