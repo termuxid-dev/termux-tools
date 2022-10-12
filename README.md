@@ -1,1 +1,21 @@
 # Termux Tools
+
+[![GitHub stars](https://img.shields.io/github/stars/termuxid-dev/termux-tools.svg?style=social&label=Star&maxAge=2592000)](https://GitHub.com/termuxid-dev/termux-tools/stargazers/)
+[![GitHub forks](https://img.shields.io/github/forks/termuxid-dev/termux-tools.svg?style=social&label=Fork&maxAge=2592000)](https://GitHub.com/termuxid-dev/termux-tools/network/)
+[![Open Source? Yes!](https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github)](https://github.com/termuxid-dev/termux-tools/)
+[![Github all releases](https://img.shields.io/github/downloads/termuxid-dev/termux-tools/total.svg)](https://GitHub.com/termuxid-dev/termux-tools/releases/)
+[![GitHub release](https://img.shields.io/github/release/termuxid-dev/termux-tools.svg)](https://GitHub.com/termuxid-dev/termux-tools/releases/)
+[![GitHub license](https://img.shields.io/github/license/termuxid-dev/termux-tools.svg)](https://github.com/termuxid-dev/termux-tools/blob/main/LICENSE)
+[![GitHub contributors](https://img.shields.io/github/contributors/termuxid-dev/termux-tools.svg)](https://GitHub.com/termuxid-dev/termux-tools/graphs/contributors/)
+
+# Contributors
+We welcome contributions from the community! It doesn't matter if you can't code, write documentation, or help find bugs,
+all contributions are welcome.
+
+<a href="https://github.com/ryugenxd/Termux-style/graphs/contributors">
+  <img width="20%" src="https://contrib.rocks/image?repo=ryugenxd/Termux-style" />
+</a>
+
+<hr/>
+
+> Made with ❤️ By Our Teams Under MIT license
