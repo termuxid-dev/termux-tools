@@ -12,8 +12,8 @@
 We welcome contributions from the community! It doesn't matter if you can't code, write documentation, or help find bugs,
 all contributions are welcome.
 
-<a href="https://github.com/ryugenxd/Termux-style/graphs/contributors">
-  <img width="20%" src="https://contrib.rocks/image?repo=ryugenxd/Termux-style" />
+<a href="https://github.com/termuxid-dev/termux-tools/graphs/contributors">
+  <img width="20%" src="https://contrib.rocks/image?repo=termuxid-dev/termux-tools" />
 </a>
 
 <hr/>
