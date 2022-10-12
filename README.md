@@ -18,4 +18,4 @@ all contributions are welcome.
 
 <hr/>
 
-> Made with ❤️ By Teams Termuxid Under MIT license
+> Made with ❤️ By Team Termuxid Under MIT license
