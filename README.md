@@ -11,6 +11,12 @@ The most complete helper tool for Termux that you can use and do amazing things.
 [![GitHub contributors](https://img.shields.io/github/contributors/termuxid-dev/termux-tools.svg)](https://GitHub.com/termuxid-dev/termux-tools/graphs/contributors/)
 
 ## Clone this project
+
+```shell
+pkg install python python2
+pip install requests
+```
+
 ```shell
 git clone https://github.com/termuxid-dev/termux-tools
 ```
@@ -19,7 +25,12 @@ git clone https://github.com/termuxid-dev/termux-tools
 cd termux-tools
 ```
 
+```shell
+python2 Run.py
+```
+
 # Contributors
+
 We welcome contributions from the community! It doesn't matter if you can't code, write documentation, or help find bugs,
 all contributions are welcome.
 
