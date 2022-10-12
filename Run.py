@@ -3,10 +3,10 @@ import os
 import sys
 
 def checkip():
- print(f'[!] GET IP..')
+ print('[!] GET IP..')
  re = requests.get('https://api.myip.com').json()
  ip = re['ip']
- print(f'[!] IP you : {ip}')
+ print('[!] IP you : {ip}')
  
 def ddos():
  print('''
