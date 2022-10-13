@@ -20,11 +20,11 @@ def pilih():
   if pilih_menu in ['01','1']:
     IP = input("\nIP TARGET : ")
     PORT = input("PORT TARGET: ")
-    bash("python ./Ddos/Ip.py %s %s"%(IP,PORT))
+    bash("python DdoS/Ip.py %s %s"%(IP,PORT))
   elif pilih_menu in ['02','2']:
     URL = input("\nURL TARGET : ")
     AMOUNT = input("AMOUNT TARGET: ")
-    bash("python ./Ddos/Url.py %s %s"%(URL,AMOUNT))
+    bash("python DdoS/Url.py %s %s"%(URL,AMOUNT))
   elif pilih_menu in ['0','00']:
     exit('\nまたね !')
   else:
