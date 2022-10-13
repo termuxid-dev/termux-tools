@@ -17,14 +17,15 @@ data = {
   "Y" : "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
   }
 
-  os.system("clear")
+os.system("clear")
 os.system("figlet Termuxid DDos Attack")
-print
-print "Author   : Rio Agung Purnomo"
-print "TEAM     : Termux Indonesia"
-print "Thanks   : All Member Termux Indonesia"
-print "Tingkat  : Programmer & Developer"
-print "https://termuxid.dev"
+print("""
+Author   : Rio Agung Purnomo
+TEAM     : Termux Indonesia
+Thanks   : All Member Termux Indonesia
+Tingkat  : Programmer & Developer
+https://termuxid.dev
+""")
 
 if sys.argv[2] == False:
     amount = 100
