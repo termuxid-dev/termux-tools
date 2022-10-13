@@ -14,7 +14,7 @@ The most complete helper tool for Termux that you can use and do amazing things.
 
 ```shell
 pkg install python python2
-pip install requests
+pip2 install requests
 ```
 
 ```shell
