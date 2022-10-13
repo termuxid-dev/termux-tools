@@ -14,9 +14,9 @@ except ImportError:
     from rich.console import Console
     from rich.table import Table
   except ImportError:
-    print('tidak dapat menginstal module')
+    print("can't install module")
 def pilih():
-  pilih_menu = input("pilih : ")
+  pilih_menu = input("enter your choice : ")
   if pilih_menu in ['01','1']:
     IP = input("\nIP TARGET : ")
     PORT = input("PORT TARGET: ")
@@ -43,10 +43,10 @@ def main():
   _______________________________
   """
   # ada jepang 🤭🤣
-  table.add_column(logo, style="cyan", no_wrap=True)
-  table.add_row("1. DDOS IP")
-  table.add_row("2. DDOS URL")
-  table.add_row("0. EXIT")
+  table.add_column(logo, style="cyan", no_wrap=False)
+  table.add_row("[1]. DDOS IP  [3]. PORT SCANNER")
+  table.add_row("[2]. DDOS URL")
+  table.add_row("[0]. EXIT")
   console = Console()
   hapus()
   console.print(table)
