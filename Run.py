@@ -2,6 +2,7 @@
 
 from os import system as bash
 from sys import exit as keluar
+from bin import Rio
 try :
   from requests import get as deteksiIp
   from rich.console import Console
@@ -19,12 +20,12 @@ def pilih():
   pilih_menu = input("enter your choice : ")
   if pilih_menu in ['01','1']:
     IP = input("\nIP TARGET : ")
-    PORT = input("PORT TARGET: ")
-    bash("python DdoS/Ip.py %s %s"%(IP,PORT))
+    PORT = int(input("PORT TARGET: "))
+    Rio.AttackIp(IP,PORT)
   elif pilih_menu in ['02','2']:
     URL = input("\nURL TARGET : ")
-    AMOUNT = input("AMOUNT TARGET: ")
-    bash("python DdoS/Url.py %s %s"%(URL,AMOUNT))
+    AMOUNT = int(input("AMOUNT TARGET: "))
+    Rio.AttackUrl(URL,AMOUNT)
   elif pilih_menu in ['0','00']:
     exit('\nまたね !')
   else:

