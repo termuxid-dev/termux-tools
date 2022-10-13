@@ -20,17 +20,19 @@ def pilih():
   if pilih_menu in ['01','1']:
     IP = input("\nIP TARGET : ")
     PORT = input("PORT TARGET: ")
-    bash("python ./Ddos/Ip.py %s %s"%(IP,PORT))
+    bash("python ./DdoS/IP.py %s %s"%(IP,PORT))
   elif pilih_menu in ['02','2']:
     URL = input("\nURL TARGET : ")
     AMOUNT = input("AMOUNT TARGET: ")
-    bash("python ./Ddos/Url.py %s %s"%(URL,AMOUNT))
+    bash("python ./DdoS/Url.py %s %s"%(URL,AMOUNT))
   elif pilih_menu in ['0','00']:
     exit('\nまたね !')
   else:
     print('\033[1;31mpilih yang ada di menu !\033[0m');
+
 def hapus():
   bash('clear')
+
 def main():
   re = deteksiIp('https://api.myip.com').json()
   ip = re['ip']
