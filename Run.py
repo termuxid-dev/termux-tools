@@ -21,14 +21,6 @@ def pilih():
   pilih_menu = input("enter your choice : ")
   if pilih_menu in ['01','1']:
     IP = input("\nIP TARGET : ")
-<<<<<<< HEAD
-    PORT = input("PORT TARGET: ")
-    bash("python ./DdoS/IP.py %s %s"%(IP,PORT))
-  elif pilih_menu in ['02','2']:
-    URL = input("\nURL TARGET : ")
-    AMOUNT = input("AMOUNT TARGET: ")
-    bash("python ./DdoS/Url.py %s %s"%(URL,AMOUNT))
-=======
     PORT = int(input("PORT TARGET: "))
     Rio.AttackIp(IP,PORT)
   elif pilih_menu in ['02','2']:
@@ -38,7 +30,6 @@ def pilih():
   elif pilih_menu in ['03','3']:
     IP = input("\nIP : ")
     DarkHunt.portScanner(IP)
->>>>>>> refs/remotes/origin/main
   elif pilih_menu in ['0','00']:
     bash('rm  $HOME/.termux/colors.properties')
     bash('rm  $HOME/.termux/font.ttf')
