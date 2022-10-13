@@ -1,79 +1,54 @@
-import requests
-import os
-import sys
+#!/usr/bin/python
 
-def checkip():
- print('[!] GET IP..')
- re = requests.get('https://api.myip.com').json()
- ip = re['ip']
- print('[!] IP you : {ip}')
- 
-def ddos():
- print('''
-     [Menu DDOS Attack]
-[1] DDOS IP
-[2] DDOS URL
-[3] Return
-''')
-menu_ddos = input('[?] Please select the menu : ')
-
-def ddos_url():
-    input_url = raw_input('[DDOS IP] Enter Target URL :')
-    input_amount = input('[DDOS IP] Enter Amount :')
-
-    if input_url == True:
- os.system('cd DdoS')
- os.system('python2 URL.py {input_url} {input_amount}')
- else:
- print('[!] Target URL failed not entered')
- sys.exit()
-
-def ddos_ip():
-    input_ip = raw_input('[DDOS IP] Enter Target IP :')
-    input_port = input('[DDOS IP] Enter Port :')
-
-    if input_ip == True:
- os.system('cd DdoS')
- os.system('python2 IP.py {input_ip} {input_port}')
- else:
- print('[!] Target IP failed not entered')
- sys.exit()
- 
- os.system("clear")
-os.system("figlet Termuxid Tools")
-print
-print "Author   : Termuxid"
-print "TEAM     : Termux Indonesia"
-print "Thanks   : All Member Termux Indonesia"
-print "Tingkat  : Programmer & Developer"
-print "https://termuxid.dev"
-print
-
-print('''
-     [Menu]
-[1] Check IP
-[2] DDOS Attack
-[3] Logout
-''')
-menu = input('[?] Please select the menu : ')
-
-if menu == '1':
- checkip()
-elif menu == '2':
- ddos()
-elif menu == '3':
- print('[?] Logot..')
- sys.exit()
-else:
- print('[?] Unknown command..')
- sys.exit()
-
-if menu_ddos == '1':
- ddos_ip()
-elif menu_ddos == '2':
- ddos_url()
-elif menu_ddos == '3':
-  os.system('python2 run.py')
-else:
- print('[?] Unknown command..')
- sys.exit()
+from os import system as bash
+from sys import exit as keluar
+try :
+  from requests import get as deteksiIp
+  from rich.console import Console
+  from rich.table import Table
+except ImportError:
+  bash('pip install requests')
+  bash('pip install rich')
+  try:
+    from requests import get as deteksiIp
+    from rich.console import Console
+    from rich.table import Table
+  except ImportError:
+    print('tidak dapat menginstal module')
+def pilih():
+  pilih_menu = input("pilih : ")
+  if pilih_menu in ['01','1']:
+    IP = input("\nIP TARGET : ")
+    PORT = input("PORT TARGET: ")
+    bash("python ./Ddos/Ip.py %s %s"%(IP,PORT))
+  elif pilih_menu in ['02','2']:
+    URL = input("\nURL TARGET : ")
+    AMOUNT = input("AMOUNT TARGET: ")
+    bash("python ./Ddos/Url.py %s %s"%(URL,AMOUNT))
+  elif pilih_menu in ['0','00']:
+    exit('\nまたね !')
+  else:
+    print('\033[1;31mpilih yang ada di menu !\033[0m');
+def hapus():
+  bash('clear')
+def main():
+  re = deteksiIp('https://api.myip.com').json()
+  ip = re['ip']
+  table = Table(title="my ip: %s"%(ip))
+  logo = """
+▀▀█▀▀ █▀▀█ █▀▀█ █── █▀▀ 
+─░█── █──█ █──█ █── ▀▀█ 
+─░█── ▀▀▀▀ ▀▀▀▀ ▀▀▀ ▀▀▀
+  Termux-Tools || Termux Indonesia
+  _______________________________
+  """
+  # ada jepang 🤭🤣
+  table.add_column(logo, style="cyan", no_wrap=True)
+  table.add_row("1. DDOS IP")
+  table.add_row("2. DDOS URL")
+  table.add_row("0. EXIT")
+  console = Console()
+  hapus()
+  console.print(table)
+  pilih()
+main()
