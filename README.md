@@ -26,7 +26,7 @@ cd termux-tools
 ```
 
 ```shell
-python2 Run.py
+python Run.py
 ```
 
 # Contributors
