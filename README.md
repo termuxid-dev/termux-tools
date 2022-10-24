@@ -13,7 +13,7 @@ The most complete helper tool for Termux that you can use and do amazing things.
 ## Installation
 
 ```shell
-pkg install python -y;git clone https://github.com/termuxid-dev/termux-tools;cd termux-tools;python Run.py;
+pkg install python -y;pip install requests;git clone https://github.com/termuxid-dev/termux-tools;cd termux-tools;python Run.py;
 ```
 
 # Contributors
